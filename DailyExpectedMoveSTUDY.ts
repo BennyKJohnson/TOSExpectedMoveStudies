@@ -1,9 +1,10 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 03-24-2023
+# Date: 03-25-2023
 #
 
 input showDailyEM = yes;
+input showSigma = yes;
 
 def yesterdayClose = Close(period = AggregationPeriod.DAY)[1];
 def date = GetYYYYMMDD();
@@ -20,7 +21,8 @@ def spxExpectedMove =
     else if date == 20230321 then 32.429
     else if date == 20230322 then 56.2
     else if date == 20230323 then 38.169
-    else if date == 20230324 then 44.321
+    else if date == 20230324 then 41.271
+    else if date == 20230327 then 39.984
 else nil;
 
 def spyExpectedMove =
@@ -34,6 +36,7 @@ def spyExpectedMove =
     else if date == 20230322 then 5.26
     else if date == 20230323 then 4.502
     else if date == 20230324 then 4.458
+    else if date == 20230327 then 4.283
 else nil;
 
 def qqqExpectedMove =
@@ -46,7 +49,8 @@ def qqqExpectedMove =
     else if date == 20230321 then 2.975
     else if date == 20230322 then 4.95
     else if date == 20230323 then 4.07
-    else if date == 20230324 then 4.231
+    else if date == 20230324 then 4.232
+    else if date == 20230327 then 3.816
 else nil;
 
 
@@ -57,6 +61,9 @@ def expectedMove =
 else nil;
 def lowerEMPriceLevel = if expectedMove then yesterdayClose - expectedMove else nil;
 def upperEMPriceLevel = if expectedMove then yesterdayClose + expectedMove else nil;
+
+def currentMove = AbsValue(close(priceType = PriceType.LAST) - yesterdayClose);
+def sigma = if !isNaN(expectedMove) then currentMove / expectedMove else nil;
 
 plot LowerEM = lowerEMPriceLevel;
 plot UpperEM = upperEMPriceLevel;
@@ -72,3 +79,4 @@ UpperEM.SetLineWeight(2);
 UpperEM.SetStyle(Curve.FIRM);
 
 AddLabel(showDailyEM and !isNaN(expectedMove), "Daily EM " + expectedMove, Color.CYAN);
+AddLabel(showSigma and !isNaN(sigma), " Daily Sigma " + sigma + " ", Color.CYAN);

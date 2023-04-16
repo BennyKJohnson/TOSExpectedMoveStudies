@@ -1,6 +1,6 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 04-15-2023
+# Date: 04-16-2023
 #
 
 input showDailyEM = yes;
@@ -36,7 +36,7 @@ def spxExpectedMove =
     else if date == 20230412 then 37.896
     else if date == 20230413 then 24.782
     else if date == 20230414 then 24.992
-    else if date == 20230417 then 24.965
+    else if date == 20230417 then 24.98
 else nil;
 
 def spyExpectedMove =
@@ -92,7 +92,7 @@ def qqqExpectedMove =
     else if date == 20230412 then 3.913
     else if date == 20230413 then 2.511
     else if date == 20230414 then 2.327
-    else if date == 20230417 then 2.731
+    else if date == 20230417 then 2.73
 else nil;
 
 

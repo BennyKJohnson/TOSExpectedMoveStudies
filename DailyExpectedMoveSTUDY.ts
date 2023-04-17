@@ -42,7 +42,7 @@ def spxExpectedMove =
     else if date == 20230412 then 37.896
     else if date == 20230413 then 24.782
     else if date == 20230414 then 24.992
-    else if date == 20230417 then 21.852
+    else if date == 20230417 then 21.482
 else nil;
 
 def spyExpectedMove =
@@ -70,7 +70,7 @@ def spyExpectedMove =
     else if date == 20230412 then 3.761
     else if date == 20230413 then 2.574
     else if date == 20230414 then 2.347
-    else if date == 20230417 then 2.636
+    else if date == 20230417 then 2.524
 else nil;
 
 def qqqExpectedMove =
@@ -98,7 +98,11 @@ def qqqExpectedMove =
     else if date == 20230412 then 3.913
     else if date == 20230413 then 2.511
     else if date == 20230414 then 2.327
-    else if date == 20230417 then 2.672
+    else if date == 20230417 then 2.559
+else nil;
+
+def ndxExpectedMove =
+ if date == 20230417 then 100.593
 else nil;
 
 
@@ -106,6 +110,7 @@ def expectedMove =
  if GetSymbol() == "SPX" then spxExpectedMove
     else if GetSymbol() == "SPY" then spyExpectedMove
     else if GetSymbol() == "QQQ" then qqqExpectedMove
+    else if GetSymbol() == "NDX" then ndxExpectedMove
 else nil;
 def lowerEMPriceLevel = if expectedMove then yesterdayClose - expectedMove else nil;
 def upperEMPriceLevel = if expectedMove then yesterdayClose + expectedMove else nil;

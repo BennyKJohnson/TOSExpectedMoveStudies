@@ -1,6 +1,6 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 04-16-2023
+# Date: 04-17-2023
 #
 
 input showDailyEM = yes;
@@ -36,7 +36,7 @@ def spxExpectedMove =
     else if date == 20230412 then 37.896
     else if date == 20230413 then 24.782
     else if date == 20230414 then 24.992
-    else if date == 20230417 then 24.98
+    else if date == 20230417 then 21.852
 else nil;
 
 def spyExpectedMove =
@@ -64,7 +64,7 @@ def spyExpectedMove =
     else if date == 20230412 then 3.761
     else if date == 20230413 then 2.574
     else if date == 20230414 then 2.347
-    else if date == 20230417 then 2.691
+    else if date == 20230417 then 2.636
 else nil;
 
 def qqqExpectedMove =
@@ -92,7 +92,7 @@ def qqqExpectedMove =
     else if date == 20230412 then 3.913
     else if date == 20230413 then 2.511
     else if date == 20230414 then 2.327
-    else if date == 20230417 then 2.73
+    else if date == 20230417 then 2.672
 else nil;
 
 
@@ -103,12 +103,20 @@ def expectedMove =
 else nil;
 def lowerEMPriceLevel = if expectedMove then yesterdayClose - expectedMove else nil;
 def upperEMPriceLevel = if expectedMove then yesterdayClose + expectedMove else nil;
+def upperEM2PriceLevel = upperEMPriceLevel + expectedMove;
+def lowerEM2PriceLevel = lowerEMPriceLevel - expectedMove;
+def upperEM3PriceLevel = upperEM2PriceLevel + expectedMove;
+def lowerEM3PriceLevel = lowerEM2PriceLevel - expectedMove;
 
 def currentMove = AbsValue(close(priceType = PriceType.LAST, period = AggregationPeriod.DAY) - yesterdayClose);
 def sigma = if !isNaN(expectedMove) then currentMove / expectedMove else nil;
 
 plot LowerEM = lowerEMPriceLevel;
 plot UpperEM = upperEMPriceLevel;
+plot LowerEM2 = lowerEM2PriceLevel;
+plot UpperEM2 = upperEM2PriceLevel;
+plot LowerEM3 = lowerEM3PriceLevel;
+plot UpperEM3 = upperEM3PriceLevel;
 
 LowerEM.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
 LowerEM.SetDefaultColor(Color.YELLOW);
@@ -119,6 +127,30 @@ UpperEM.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
 UpperEM.SetDefaultColor(Color.YELLOW);
 UpperEM.SetLineWeight(2);
 UpperEM.SetStyle(Curve.FIRM);
+
+LowerEM2.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+LowerEM2.SetDefaultColor(Color.ORANGE);
+LowerEM2.SetLineWeight(2);
+LowerEM2.SetStyle(Curve.FIRM);
+LowerEM2.Hide();
+
+UpperEM2.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+UpperEM2.SetDefaultColor(Color.ORANGE);
+UpperEM2.SetLineWeight(2);
+UpperEM2.SetStyle(Curve.FIRM);
+UpperEM2.Hide();
+
+LowerEM3.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+LowerEM3.SetDefaultColor(Color.RED);
+LowerEM3.SetLineWeight(2);
+LowerEM3.SetStyle(Curve.FIRM);
+LowerEM3.Hide();
+
+UpperEM3.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+UpperEM3.SetDefaultColor(Color.RED);
+UpperEM3.SetLineWeight(2);
+UpperEM3.SetStyle(Curve.FIRM);
+UpperEM3.Hide();
 
 AddLabel(showDailyEM and !isNaN(expectedMove), "Daily EM " + expectedMove, Color.CYAN);
 AddLabel(showSigma and !isNaN(sigma), " Daily Sigma " + sigma + " ", Color.CYAN);

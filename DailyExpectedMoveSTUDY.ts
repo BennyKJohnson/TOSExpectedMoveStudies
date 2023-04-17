@@ -43,6 +43,7 @@ def spxExpectedMove =
     else if date == 20230413 then 24.782
     else if date == 20230414 then 24.992
     else if date == 20230417 then 21.482
+    else if date == 20230418 then 22.912
 else nil;
 
 def spyExpectedMove =
@@ -71,6 +72,7 @@ def spyExpectedMove =
     else if date == 20230413 then 2.574
     else if date == 20230414 then 2.347
     else if date == 20230417 then 2.524
+    else if date == 20230418 then 2.442
 else nil;
 
 def qqqExpectedMove =
@@ -99,10 +101,12 @@ def qqqExpectedMove =
     else if date == 20230413 then 2.511
     else if date == 20230414 then 2.327
     else if date == 20230417 then 2.559
+    else if date == 20230418 then 2.522
 else nil;
 
 def ndxExpectedMove =
  if date == 20230417 then 100.593
+    else if date == 20230418 then 94.93
 else nil;
 
 
@@ -166,9 +170,9 @@ UpperEM3.Hide();
 AddLabel(showDailyEM and !isNaN(expectedMove), "Daily EM " + expectedMove, Color.CYAN);
 AddLabel(showSigma and !isNaN(sigma), " Daily Sigma " + sigma + " ", Color.CYAN);
 
-AddLabel(showLowerEMPrice and !isNaN(lowerEMPriceLevel), " LowerEM " + LowerEMPriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice and !isNaN(upperEMPriceLevel), " UpperEM " + UpperEMPriceLevel + "  ", Color.CYAN);
-AddLabel(showLowerEMPrice2 and !isNaN(lowerEM2PriceLevel), " LowerEM2 " + LowerEM2PriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice2 and !isNaN(upperEM2PriceLevel), " UpperEM2 " + UpperEM2PriceLevel + "  ", Color.CYAN);
-AddLabel(showLowerEMPrice3 and !isNaN(lowerEM3PriceLevel), " LowerEM3 " + LowerEM3PriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice3 and !isNaN(upperEM3PriceLevel), " UpperEM3 " + UpperEM3PriceLevel + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice and !isNaN(lowerEMPriceLevel), " LowerEM " + AsText(LowerEMPriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice and !isNaN(upperEMPriceLevel), " UpperEM " + AsText(UpperEMPriceLevel) + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice2 and !isNaN(lowerEM2PriceLevel), " LowerEM2 " + AsText(LowerEM2PriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice2 and !isNaN(upperEM2PriceLevel), " UpperEM2 " + AsText(UpperEM2PriceLevel) + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice3 and !isNaN(lowerEM3PriceLevel), " LowerEM3 " + AsText(LowerEM3PriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice3 and !isNaN(upperEM3PriceLevel), " UpperEM3 " + AsText(UpperEM3PriceLevel) + "  ", Color.CYAN);

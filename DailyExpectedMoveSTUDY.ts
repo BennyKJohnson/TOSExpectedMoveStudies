@@ -5,6 +5,12 @@
 
 input showDailyEM = yes;
 input showSigma = yes;
+input showLowerEMPrice = yes;
+input showUpperEMPrice = yes;
+input showLowerEMPrice2 = no;
+input showUpperEMPrice2 = no;
+input showLowerEMPrice3 = no;
+input showUpperEMPrice3 = no;
 
 def yesterdayClose = Close(period = AggregationPeriod.DAY)[1];
 def date = GetYYYYMMDD();
@@ -154,3 +160,10 @@ UpperEM3.Hide();
 
 AddLabel(showDailyEM and !isNaN(expectedMove), "Daily EM " + expectedMove, Color.CYAN);
 AddLabel(showSigma and !isNaN(sigma), " Daily Sigma " + sigma + " ", Color.CYAN);
+
+AddLabel(showLowerEMPrice and !isNaN(lowerEMPriceLevel), " LowerEM " + LowerEMPriceLevel + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice and !isNaN(upperEMPriceLevel), " UpperEM " + UpperEMPriceLevel + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice2 and !isNaN(lowerEM2PriceLevel), " LowerEM2 " + LowerEM2PriceLevel + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice2 and !isNaN(upperEM2PriceLevel), " UpperEM2 " + UpperEM2PriceLevel + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice3 and !isNaN(lowerEM3PriceLevel), " LowerEM3 " + LowerEM3PriceLevel + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice3 and !isNaN(upperEM3PriceLevel), " UpperEM3 " + UpperEM3PriceLevel + "  ", Color.CYAN);

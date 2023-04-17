@@ -1,6 +1,6 @@
 # TOS+Auto Weekly Expected Move 
 # Author: Benny33
-# Date: 04-10-2023
+# Date: 04-17-2023
 #
 
 declare hide_on_intraday;
@@ -678,7 +678,8 @@ def qqqExpectedMove =
     else if date == 20230320 then 10.663
     else if date == 20230327 then 8.748
     else if date == 20230403 then 6.38
-    else if date == 20230410 then 7.833
+    else if date == 20230410 then 7.871
+    else if date == 20230417 then 6.303
 else 0;
 
 def rtxExpectedMove =
@@ -1047,7 +1048,8 @@ def spxExpectedMove =
     else if date == 20230320 then 121.222
     else if date == 20230327 then 89.014
     else if date == 20230403 then 58.786
-    else if date == 20230410 then 75.714
+    else if date == 20230410 then 68.902
+    else if date == 20230417 then 57.648
 else 0;
 
 def spyExpectedMove =
@@ -1055,7 +1057,8 @@ def spyExpectedMove =
     else if date == 20230320 then 12.026
     else if date == 20230327 then 9.147
     else if date == 20230403 then 6.253
-    else if date == 20230410 then 7.633
+    else if date == 20230410 then 7.615
+    else if date == 20230417 then 5.951
 else 0;
 
 def tExpectedMove =

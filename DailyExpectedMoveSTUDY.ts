@@ -1,6 +1,6 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 04-17-2023
+# Date: 05-11-2023
 #
 
 input showDailyEM = yes;
@@ -43,6 +43,24 @@ def spxExpectedMove =
     else if date == 20230413 then 24.782
     else if date == 20230414 then 24.992
     else if date == 20230417 then 21.482
+    else if date == 20230418 then 20.185
+    else if date == 20230419 then 21.9
+    else if date == 20230420 then 23.959
+    else if date == 20230421 then 26.107
+    else if date == 20230424 then 24.137
+    else if date == 20230425 then 21.644
+    else if date == 20230426 then 23.259
+    else if date == 20230427 then 22.389
+    else if date == 20230428 then 32.134
+    else if date == 20230501 then 22.054
+    else if date == 20230502 then 20.293
+    else if date == 20230503 then 39.173
+    else if date == 20230504 then 34.274
+    else if date == 20230505 then 32.756
+    else if date == 20230508 then 21.465
+    else if date == 20230509 then 20.892
+    else if date == 20230510 then 38.124
+    else if date == 20230511 then 23.42
 else nil;
 
 def spyExpectedMove =
@@ -71,6 +89,24 @@ def spyExpectedMove =
     else if date == 20230413 then 2.574
     else if date == 20230414 then 2.347
     else if date == 20230417 then 2.524
+    else if date == 20230418 then 2.389
+    else if date == 20230419 then 2.395
+    else if date == 20230420 then 2.437
+    else if date == 20230421 then 2.693
+    else if date == 20230424 then 2.714
+    else if date == 20230425 then 2.252
+    else if date == 20230426 then 2.709
+    else if date == 20230427 then 2.417
+    else if date == 20230428 then 3.295
+    else if date == 20230501 then 2.637
+    else if date == 20230502 then 2.059
+    else if date == 20230503 then 3.777
+    else if date == 20230504 then 3.637
+    else if date == 20230505 then 3.596
+    else if date == 20230508 then 2.815
+    else if date == 20230509 then 2.391
+    else if date == 20230510 then 3.764
+    else if date == 20230511 then 2.54
 else nil;
 
 def qqqExpectedMove =
@@ -99,10 +135,31 @@ def qqqExpectedMove =
     else if date == 20230413 then 2.511
     else if date == 20230414 then 2.327
     else if date == 20230417 then 2.559
+    else if date == 20230418 then 2.466
+    else if date == 20230419 then 2.552
+    else if date == 20230420 then 2.447
+    else if date == 20230421 then 2.808
+    else if date == 20230424 then 2.6
+    else if date == 20230425 then 2.765
+    else if date == 20230426 then 3.172
+    else if date == 20230427 then 2.961
+    else if date == 20230428 then 3.438
+    else if date == 20230501 then 2.645
+    else if date == 20230502 then 1.887
+    else if date == 20230503 then 3.48
+    else if date == 20230504 then 3.152
+    else if date == 20230505 then 3.228
+    else if date == 20230508 then 2.372
+    else if date == 20230509 then 2.633
+    else if date == 20230510 then 3.194
+    else if date == 20230511 then 2.183
 else nil;
 
 def ndxExpectedMove =
  if date == 20230417 then 100.593
+    else if date == 20230418 then 92.738
+    else if date == 20230419 then 98.46
+    else if date == 20230420 then 98.938
 else nil;
 
 
@@ -166,9 +223,9 @@ UpperEM3.Hide();
 AddLabel(showDailyEM and !isNaN(expectedMove), "Daily EM " + expectedMove, Color.CYAN);
 AddLabel(showSigma and !isNaN(sigma), " Daily Sigma " + sigma + " ", Color.CYAN);
 
-AddLabel(showLowerEMPrice and !isNaN(lowerEMPriceLevel), " LowerEM " + LowerEMPriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice and !isNaN(upperEMPriceLevel), " UpperEM " + UpperEMPriceLevel + "  ", Color.CYAN);
-AddLabel(showLowerEMPrice2 and !isNaN(lowerEM2PriceLevel), " LowerEM2 " + LowerEM2PriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice2 and !isNaN(upperEM2PriceLevel), " UpperEM2 " + UpperEM2PriceLevel + "  ", Color.CYAN);
-AddLabel(showLowerEMPrice3 and !isNaN(lowerEM3PriceLevel), " LowerEM3 " + LowerEM3PriceLevel + "  ", Color.CYAN);
-AddLabel(showUpperEMPrice3 and !isNaN(upperEM3PriceLevel), " UpperEM3 " + UpperEM3PriceLevel + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice and !isNaN(lowerEMPriceLevel), " LowerEM " + AsText(LowerEMPriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice and !isNaN(upperEMPriceLevel), " UpperEM " + AsText(UpperEMPriceLevel) + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice2 and !isNaN(lowerEM2PriceLevel), " LowerEM2 " + AsText(LowerEM2PriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice2 and !isNaN(upperEM2PriceLevel), " UpperEM2 " + AsText(UpperEM2PriceLevel) + "  ", Color.CYAN);
+AddLabel(showLowerEMPrice3 and !isNaN(lowerEM3PriceLevel), " LowerEM3 " + AsText(LowerEM3PriceLevel) + "  ", Color.CYAN);
+AddLabel(showUpperEMPrice3 and !isNaN(upperEM3PriceLevel), " UpperEM3 " + AsText(UpperEM3PriceLevel) + "  ", Color.CYAN);

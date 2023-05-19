@@ -1,6 +1,6 @@
 # TOS+Auto Weekly Expected Move 
 # Author: Benny33
-# Date: 05-08-2023
+# Date: 05-15-2023
 #
 
 declare hide_on_intraday;
@@ -31,6 +31,7 @@ def aaplExpectedMove =
     else if date == 20230424 then 4.119
     else if date == 20230501 then 7.076
     else if date == 20230508 then 5.266
+    else if date == 20230515 then 3.867
 else 0;
 
 def abbvExpectedMove =
@@ -43,6 +44,7 @@ def abbvExpectedMove =
     else if date == 20230424 then 5.073
     else if date == 20230501 then 3.048
     else if date == 20230508 then 3.338
+    else if date == 20230515 then 2.818
 else 0;
 
 def abtExpectedMove =
@@ -55,6 +57,7 @@ def abtExpectedMove =
     else if date == 20230424 then 2.178
     else if date == 20230501 then 1.981
     else if date == 20230508 then 2.254
+    else if date == 20230515 then 2.12
 else 0;
 
 def acnExpectedMove =
@@ -67,6 +70,7 @@ def acnExpectedMove =
     else if date == 20230424 then 5.931
     else if date == 20230501 then 6.797
     else if date == 20230508 then 7.398
+    else if date == 20230515 then 6.445
 else 0;
 
 def adbeExpectedMove =
@@ -79,6 +83,7 @@ def adbeExpectedMove =
     else if date == 20230424 then 10.495
     else if date == 20230501 then 11.175
     else if date == 20230508 then 11.269
+    else if date == 20230515 then 10.908
 else 0;
 
 def aigExpectedMove =
@@ -91,6 +96,7 @@ def aigExpectedMove =
     else if date == 20230424 then 1.58
     else if date == 20230501 then 2.212
     else if date == 20230508 then 2.293
+    else if date == 20230515 then 1.712
 else 0;
 
 def amdExpectedMove =
@@ -103,6 +109,7 @@ def amdExpectedMove =
     else if date == 20230424 then 3.982
     else if date == 20230501 then 6.744
     else if date == 20230508 then 4.032
+    else if date == 20230515 then 3.98
 else 0;
 
 def amgnExpectedMove =
@@ -115,6 +122,7 @@ def amgnExpectedMove =
     else if date == 20230424 then 8.334
     else if date == 20230501 then 5.26
     else if date == 20230508 then 5.17
+    else if date == 20230515 then 6.073
 else 0;
 
 def amtExpectedMove =
@@ -131,6 +139,7 @@ def amznExpectedMove =
     else if date == 20230424 then 7.691
     else if date == 20230501 then 4.139
     else if date == 20230508 then 3.344
+    else if date == 20230515 then 3.51
 else 0;
 
 def avgoExpectedMove =
@@ -143,6 +152,7 @@ def avgoExpectedMove =
     else if date == 20230424 then 15.212
     else if date == 20230501 then 17.479
     else if date == 20230508 then 15.66
+    else if date == 20230515 then 15.922
 else 0;
 
 def axpExpectedMove =
@@ -155,6 +165,7 @@ def axpExpectedMove =
     else if date == 20230424 then 4.313
     else if date == 20230501 then 4.489
     else if date == 20230508 then 4.907
+    else if date == 20230515 then 4.677
 else 0;
 
 def baExpectedMove =
@@ -167,6 +178,7 @@ def baExpectedMove =
     else if date == 20230424 then 9.816
     else if date == 20230501 then 6.086
     else if date == 20230508 then 6.456
+    else if date == 20230515 then 6.253
 else 0;
 
 def bacExpectedMove =
@@ -179,6 +191,7 @@ def bacExpectedMove =
     else if date == 20230424 then 0.864
     else if date == 20230501 then 0.926
     else if date == 20230508 then 1.105
+    else if date == 20230515 then 0.99
 else 0;
 
 def bkExpectedMove =
@@ -195,6 +208,7 @@ def bkngExpectedMove =
     else if date == 20230424 then 61.485
     else if date == 20230501 then 138.369
     else if date == 20230508 then 89.015
+    else if date == 20230515 then 70.679
 else 0;
 
 def blkExpectedMove =
@@ -207,6 +221,7 @@ def blkExpectedMove =
     else if date == 20230424 then 18.432
     else if date == 20230501 then 16.899
     else if date == 20230508 then 19.323
+    else if date == 20230515 then 16.307
 else 0;
 
 def bmyExpectedMove =
@@ -219,6 +234,7 @@ def bmyExpectedMove =
     else if date == 20230424 then 1.964
     else if date == 20230501 then 1.438
     else if date == 20230508 then 1.498
+    else if date == 20230515 then 1.711
 else 0;
 
 def brkbExpectedMove =
@@ -231,6 +247,7 @@ def brkbExpectedMove =
     else if date == 20230424 then 4.913
     else if date == 20230501 then 5.991
     else if date == 20230508 then 7.497
+    else if date == 20230515 then 5.694
 else 0;
 
 def cExpectedMove =
@@ -243,6 +260,7 @@ def cExpectedMove =
     else if date == 20230424 then 1.489
     else if date == 20230501 then 1.397
     else if date == 20230508 then 1.753
+    else if date == 20230515 then 1.546
 else 0;
 
 def catExpectedMove =
@@ -255,6 +273,7 @@ def catExpectedMove =
     else if date == 20230424 then 10.93
     else if date == 20230501 then 6.677
     else if date == 20230508 then 6.608
+    else if date == 20230515 then 6.571
 else 0;
 
 def chtrExpectedMove =
@@ -267,6 +286,7 @@ def chtrExpectedMove =
     else if date == 20230424 then 24.241
     else if date == 20230501 then 13.189
     else if date == 20230508 then 8.426
+    else if date == 20230515 then 12.285
 else 0;
 
 def clExpectedMove =
@@ -283,6 +303,7 @@ def cmcsaExpectedMove =
     else if date == 20230424 then 1.835
     else if date == 20230501 then 1.008
     else if date == 20230508 then 0.978
+    else if date == 20230515 then 1.029
 else 0;
 
 def cofExpectedMove =
@@ -295,6 +316,7 @@ def cofExpectedMove =
     else if date == 20230424 then 6.139
     else if date == 20230501 then 3.854
     else if date == 20230508 then 4.332
+    else if date == 20230515 then 3.594
 else 0;
 
 def copExpectedMove =
@@ -307,6 +329,7 @@ def copExpectedMove =
     else if date == 20230424 then 3.35
     else if date == 20230501 then 4.353
     else if date == 20230508 then 3.767
+    else if date == 20230515 then 3.811
 else 0;
 
 def costExpectedMove =
@@ -319,6 +342,7 @@ def costExpectedMove =
     else if date == 20230424 then 9.873
     else if date == 20230501 then 11.738
     else if date == 20230508 then 9.757
+    else if date == 20230515 then 11.014
 else 0;
 
 def crmExpectedMove =
@@ -331,6 +355,7 @@ def crmExpectedMove =
     else if date == 20230424 then 5.873
     else if date == 20230501 then 5.98
     else if date == 20230508 then 5.858
+    else if date == 20230515 then 5.768
 else 0;
 
 def cscoExpectedMove =
@@ -343,6 +368,7 @@ def cscoExpectedMove =
     else if date == 20230424 then 1.113
     else if date == 20230501 then 1.003
     else if date == 20230508 then 0.989
+    else if date == 20230515 then 2.453
 else 0;
 
 def cvsExpectedMove =
@@ -355,6 +381,7 @@ def cvsExpectedMove =
     else if date == 20230424 then 1.867
     else if date == 20230501 then 3.578
     else if date == 20230508 then 2.138
+    else if date == 20230515 then 1.913
 else 0;
 
 def cvxExpectedMove =
@@ -367,6 +394,7 @@ def cvxExpectedMove =
     else if date == 20230424 then 5.188
     else if date == 20230501 then 3.935
     else if date == 20230508 then 4.28
+    else if date == 20230515 then 4.459
 else 0;
 
 def dhrExpectedMove =
@@ -379,6 +407,7 @@ def dhrExpectedMove =
     else if date == 20230424 then 10.845
     else if date == 20230501 then 5.635
     else if date == 20230508 then 6.67
+    else if date == 20230515 then 5.83
 else 0;
 
 def disExpectedMove =
@@ -391,6 +420,7 @@ def disExpectedMove =
     else if date == 20230424 then 2.766
     else if date == 20230501 then 2.969
     else if date == 20230508 then 6.277
+    else if date == 20230515 then 2.619
 else 0;
 
 def dowExpectedMove =
@@ -403,6 +433,7 @@ def dowExpectedMove =
     else if date == 20230424 then 2.094
     else if date == 20230501 then 1.618
     else if date == 20230508 then 1.68
+    else if date == 20230515 then 1.918
 else 0;
 
 def dukExpectedMove =
@@ -419,6 +450,7 @@ def eemExpectedMove =
     else if date == 20230424 then 0.574
     else if date == 20230501 then 0.684
     else if date == 20230508 then 0.614
+    else if date == 20230515 then 0.617
 else 0;
 
 def emrExpectedMove =
@@ -431,6 +463,7 @@ def emrExpectedMove =
     else if date == 20230424 then 2.122
     else if date == 20230501 then 2.788
     else if date == 20230508 then 1.748
+    else if date == 20230515 then 2.014
 else 0;
 
 def excExpectedMove =
@@ -447,6 +480,7 @@ def fExpectedMove =
     else if date == 20230424 then 0.564
     else if date == 20230501 then 0.757
     else if date == 20230508 then 0.492
+    else if date == 20230515 then 0.458
 else 0;
 
 def fdxExpectedMove =
@@ -459,6 +493,7 @@ def fdxExpectedMove =
     else if date == 20230424 then 5.707
     else if date == 20230501 then 5.578
     else if date == 20230508 then 5.396
+    else if date == 20230515 then 5.951
 else 0;
 
 def fxiExpectedMove =
@@ -471,6 +506,7 @@ def fxiExpectedMove =
     else if date == 20230424 then 0.844
     else if date == 20230501 then 0.852
     else if date == 20230508 then 0.979
+    else if date == 20230515 then 0.863
 else 0;
 
 def gdExpectedMove =
@@ -483,6 +519,7 @@ def gdExpectedMove =
     else if date == 20230424 then 6.347
     else if date == 20230501 then 4.089
     else if date == 20230508 then 4.249
+    else if date == 20230515 then 4.466
 else 0;
 
 def geExpectedMove =
@@ -495,6 +532,7 @@ def geExpectedMove =
     else if date == 20230424 then 4.887
     else if date == 20230501 then 2.715
     else if date == 20230508 then 3.011
+    else if date == 20230515 then 2.955
 else 0;
 
 def gildExpectedMove =
@@ -507,6 +545,7 @@ def gildExpectedMove =
     else if date == 20230424 then 4.036
     else if date == 20230501 then 2.497
     else if date == 20230508 then 2.148
+    else if date == 20230515 then 2.215
 else 0;
 
 def gldExpectedMove =
@@ -519,6 +558,7 @@ def gldExpectedMove =
     else if date == 20230424 then 3.039
     else if date == 20230501 then 3.33
     else if date == 20230508 then 3.582
+    else if date == 20230515 then 3.002
 else 0;
 
 def gmExpectedMove =
@@ -531,6 +571,7 @@ def gmExpectedMove =
     else if date == 20230424 then 2.089
     else if date == 20230501 then 1.322
     else if date == 20230508 then 1.388
+    else if date == 20230515 then 1.285
 else 0;
 
 def googExpectedMove =
@@ -543,6 +584,7 @@ def googExpectedMove =
     else if date == 20230424 then 6.153
     else if date == 20230501 then 3.201
     else if date == 20230508 then 3.899
+    else if date == 20230515 then 3.363
 else 0;
 
 def googlExpectedMove =
@@ -555,6 +597,7 @@ def googlExpectedMove =
     else if date == 20230424 then 6.112
     else if date == 20230501 then 3.365
     else if date == 20230508 then 3.128
+    else if date == 20230515 then 3.485
 else 0;
 
 def gsExpectedMove =
@@ -567,6 +610,7 @@ def gsExpectedMove =
     else if date == 20230424 then 7.48
     else if date == 20230501 then 8.063
     else if date == 20230508 then 9.695
+    else if date == 20230515 then 8.213
 else 0;
 
 def hdExpectedMove =
@@ -579,6 +623,7 @@ def hdExpectedMove =
     else if date == 20230424 then 6.661
     else if date == 20230501 then 7.151
     else if date == 20230508 then 7.573
+    else if date == 20230515 then 14.933
 else 0;
 
 def honExpectedMove =
@@ -591,6 +636,7 @@ def honExpectedMove =
     else if date == 20230424 then 6.458
     else if date == 20230501 then 4.059
     else if date == 20230508 then 4.489
+    else if date == 20230515 then 4.951
 else 0;
 
 def hygExpectedMove =
@@ -603,6 +649,7 @@ def hygExpectedMove =
     else if date == 20230424 then 0.773
     else if date == 20230501 then 0.816
     else if date == 20230508 then 0.735
+    else if date == 20230515 then 0.729
 else 0;
 
 def ibmExpectedMove =
@@ -615,6 +662,7 @@ def ibmExpectedMove =
     else if date == 20230424 then 2.159
     else if date == 20230501 then 2.329
     else if date == 20230508 then 2.518
+    else if date == 20230515 then 2.247
 else 0;
 
 def intcExpectedMove =
@@ -627,6 +675,7 @@ def intcExpectedMove =
     else if date == 20230424 then 2.171
     else if date == 20230501 then 1.195
     else if date == 20230508 then 1.169
+    else if date == 20230515 then 1.007
 else 0;
 
 def iwmExpectedMove =
@@ -639,6 +688,7 @@ def iwmExpectedMove =
     else if date == 20230424 then 3.875
     else if date == 20230501 then 4.206
     else if date == 20230508 then 4.308
+    else if date == 20230515 then 3.929
 else 0;
 
 def jnjExpectedMove =
@@ -651,6 +701,7 @@ def jnjExpectedMove =
     else if date == 20230424 then 3.032
     else if date == 20230501 then 2.708
     else if date == 20230508 then 2.859
+    else if date == 20230515 then 2.907
 else 0;
 
 def jpmExpectedMove =
@@ -663,6 +714,7 @@ def jpmExpectedMove =
     else if date == 20230424 then 2.907
     else if date == 20230501 then 3.004
     else if date == 20230508 then 4.205
+    else if date == 20230515 then 3.336
 else 0;
 
 def khcExpectedMove =
@@ -675,6 +727,7 @@ def khcExpectedMove =
     else if date == 20230424 then 0.731
     else if date == 20230501 then 1.463
     else if date == 20230508 then 0.741
+    else if date == 20230515 then 0.708
 else 0;
 
 def koExpectedMove =
@@ -687,6 +740,7 @@ def koExpectedMove =
     else if date == 20230424 then 1.482
     else if date == 20230501 then 0.913
     else if date == 20230508 then 0.916
+    else if date == 20230515 then 0.899
 else 0;
 
 def linExpectedMove =
@@ -703,6 +757,7 @@ def llyExpectedMove =
     else if date == 20230424 then 15.829
     else if date == 20230501 then 9.936
     else if date == 20230508 then 10.139
+    else if date == 20230515 then 10.348
 else 0;
 
 def lmtExpectedMove =
@@ -715,6 +770,7 @@ def lmtExpectedMove =
     else if date == 20230424 then 9.342
     else if date == 20230501 then 8.481
     else if date == 20230508 then 9.51
+    else if date == 20230515 then 8.518
 else 0;
 
 def lowExpectedMove =
@@ -727,6 +783,7 @@ def lowExpectedMove =
     else if date == 20230424 then 5.288
     else if date == 20230501 then 5.449
     else if date == 20230508 then 5.736
+    else if date == 20230515 then 6.459
 else 0;
 
 def maExpectedMove =
@@ -739,6 +796,7 @@ def maExpectedMove =
     else if date == 20230424 then 13.047
     else if date == 20230501 then 7.701
     else if date == 20230508 then 7.996
+    else if date == 20230515 then 7.611
 else 0;
 
 def mcdExpectedMove =
@@ -751,6 +809,7 @@ def mcdExpectedMove =
     else if date == 20230424 then 8.255
     else if date == 20230501 then 4.22
     else if date == 20230508 then 4.893
+    else if date == 20230515 then 4.62
 else 0;
 
 def mdlzExpectedMove =
@@ -763,6 +822,7 @@ def mdlzExpectedMove =
     else if date == 20230424 then 1.941
     else if date == 20230501 then 1.261
     else if date == 20230508 then 1.064
+    else if date == 20230515 then 1.184
 else 0;
 
 def mdtExpectedMove =
@@ -775,6 +835,7 @@ def mdtExpectedMove =
     else if date == 20230424 then 2.37
     else if date == 20230501 then 2.464
     else if date == 20230508 then 3.576
+    else if date == 20230515 then 4.79
 else 0;
 
 def metExpectedMove =
@@ -787,6 +848,7 @@ def metExpectedMove =
     else if date == 20230424 then 1.699
     else if date == 20230501 then 2.571
     else if date == 20230508 then 2.232
+    else if date == 20230515 then 2.019
 else 0;
 
 def metaExpectedMove =
@@ -799,6 +861,7 @@ def metaExpectedMove =
     else if date == 20230424 then 19.664
     else if date == 20230501 then 8.508
     else if date == 20230508 then 8.214
+    else if date == 20230515 then 7.326
 else 0;
 
 def mmmExpectedMove =
@@ -811,6 +874,7 @@ def mmmExpectedMove =
     else if date == 20230424 then 4.91
     else if date == 20230501 then 2.683
     else if date == 20230508 then 3.054
+    else if date == 20230515 then 3.087
 else 0;
 
 def moExpectedMove =
@@ -823,6 +887,7 @@ def moExpectedMove =
     else if date == 20230424 then 1.043
     else if date == 20230501 then 0.795
     else if date == 20230508 then 0.789
+    else if date == 20230515 then 0.965
 else 0;
 
 def mrkExpectedMove =
@@ -835,6 +900,7 @@ def mrkExpectedMove =
     else if date == 20230424 then 3.427
     else if date == 20230501 then 2.421
     else if date == 20230508 then 2.524
+    else if date == 20230515 then 2.441
 else 0;
 
 def msExpectedMove =
@@ -847,6 +913,7 @@ def msExpectedMove =
     else if date == 20230424 then 2.336
     else if date == 20230501 then 2.731
     else if date == 20230508 then 2.666
+    else if date == 20230515 then 2.371
 else 0;
 
 def msftExpectedMove =
@@ -859,6 +926,7 @@ def msftExpectedMove =
     else if date == 20230424 then 12.405
     else if date == 20230501 then 7.742
     else if date == 20230508 then 7.245
+    else if date == 20230515 then 6.461
 else 0;
 
 def neeExpectedMove =
@@ -875,6 +943,7 @@ def nflxExpectedMove =
     else if date == 20230424 then 11.875
     else if date == 20230501 then 11.757
     else if date == 20230508 then 10.517
+    else if date == 20230515 then 11.53
 else 0;
 
 def nkeExpectedMove =
@@ -887,6 +956,7 @@ def nkeExpectedMove =
     else if date == 20230424 then 3.033
     else if date == 20230501 then 3.294
     else if date == 20230508 then 3.742
+    else if date == 20230515 then 3.654
 else 0;
 
 def nvdaExpectedMove =
@@ -899,6 +969,7 @@ def nvdaExpectedMove =
     else if date == 20230424 then 11.212
     else if date == 20230501 then 10.862
     else if date == 20230508 then 11.431
+    else if date == 20230515 then 9.952
 else 0;
 
 def orclExpectedMove =
@@ -911,6 +982,7 @@ def orclExpectedMove =
     else if date == 20230424 then 1.91
     else if date == 20230501 then 2.947
     else if date == 20230508 then 2.064
+    else if date == 20230515 then 2.031
 else 0;
 
 def pepExpectedMove =
@@ -923,6 +995,7 @@ def pepExpectedMove =
     else if date == 20230424 then 4.534
     else if date == 20230501 then 2.885
     else if date == 20230508 then 2.809
+    else if date == 20230515 then 2.865
 else 0;
 
 def pfeExpectedMove =
@@ -935,6 +1008,7 @@ def pfeExpectedMove =
     else if date == 20230424 then 0.783
     else if date == 20230501 then 1.509
     else if date == 20230508 then 0.955
+    else if date == 20230515 then 0.807
 else 0;
 
 def pgExpectedMove =
@@ -947,6 +1021,7 @@ def pgExpectedMove =
     else if date == 20230424 then 2.767
     else if date == 20230501 then 2.334
     else if date == 20230508 then 1.25
+    else if date == 20230515 then 2.273
 else 0;
 
 def pmExpectedMove =
@@ -959,6 +1034,7 @@ def pmExpectedMove =
     else if date == 20230424 then 1.631
     else if date == 20230501 then 1.549
     else if date == 20230508 then 1.758
+    else if date == 20230515 then 1.821
 else 0;
 
 def pyplExpectedMove =
@@ -971,6 +1047,7 @@ def pyplExpectedMove =
     else if date == 20230424 then 2.547
     else if date == 20230501 then 2.796
     else if date == 20230508 then 5.785
+    else if date == 20230515 then 2.286
 else 0;
 
 def qcomExpectedMove =
@@ -983,6 +1060,7 @@ def qcomExpectedMove =
     else if date == 20230424 then 3.484
     else if date == 20230501 then 7.307
     else if date == 20230508 then 3.381
+    else if date == 20230515 then 3.053
 else 0;
 
 def qqqExpectedMove =
@@ -995,6 +1073,7 @@ def qqqExpectedMove =
     else if date == 20230424 then 6.916
     else if date == 20230501 then 7.522
     else if date == 20230508 then 6.252
+    else if date == 20230515 then 5.813
 else 0;
 
 def rtxExpectedMove =
@@ -1007,6 +1086,7 @@ def rtxExpectedMove =
     else if date == 20230424 then 3.232
     else if date == 20230501 then 2.035
     else if date == 20230508 then 2.292
+    else if date == 20230515 then 2.096
 else 0;
 
 def sbuxExpectedMove =
@@ -1019,6 +1099,7 @@ def sbuxExpectedMove =
     else if date == 20230424 then 2.351
     else if date == 20230501 then 6.17
     else if date == 20230508 then 2.651
+    else if date == 20230515 then 2.468
 else 0;
 
 def schwExpectedMove =
@@ -1031,6 +1112,7 @@ def schwExpectedMove =
     else if date == 20230424 then 2.006
     else if date == 20230501 then 2.194
     else if date == 20230508 then 2.758
+    else if date == 20230515 then 2.333
 else 0;
 
 def slvExpectedMove =
@@ -1043,6 +1125,7 @@ def slvExpectedMove =
     else if date == 20230424 then 0.725
     else if date == 20230501 then 0.733
     else if date == 20230508 then 0.83
+    else if date == 20230515 then 0.745
 else 0;
 
 def soExpectedMove =
@@ -1055,6 +1138,7 @@ def soExpectedMove =
     else if date == 20230424 then 1.581
     else if date == 20230501 then 1.365
     else if date == 20230508 then 1.566
+    else if date == 20230515 then 1.317
 else 0;
 
 def spgExpectedMove =
@@ -1388,6 +1472,7 @@ def spxExpectedMove =
     else if date == 20230424 then 62.662
     else if date == 20230501 then 70.138
     else if date == 20230508 then 64.735
+    else if date == 20230515 then 57.641
 else 0;
 
 def spyExpectedMove =
@@ -1400,6 +1485,7 @@ def spyExpectedMove =
     else if date == 20230424 then 6.244
     else if date == 20230501 then 7.218
     else if date == 20230508 then 6.864
+    else if date == 20230515 then 6.422
 else 0;
 
 def tExpectedMove =
@@ -1412,6 +1498,7 @@ def tExpectedMove =
     else if date == 20230424 then 0.509
     else if date == 20230501 then 0.447
     else if date == 20230508 then 0.396
+    else if date == 20230515 then 0.383
 else 0;
 
 def tgtExpectedMove =
@@ -1424,6 +1511,7 @@ def tgtExpectedMove =
     else if date == 20230424 then 4.283
     else if date == 20230501 then 4.657
     else if date == 20230508 then 4.521
+    else if date == 20230515 then 12.399
 else 0;
 
 def tltExpectedMove =
@@ -1436,6 +1524,7 @@ def tltExpectedMove =
     else if date == 20230424 then 1.713
     else if date == 20230501 then 2.023
     else if date == 20230508 then 2.014
+    else if date == 20230515 then 1.744
 else 0;
 
 def tmoExpectedMove =
@@ -1448,6 +1537,7 @@ def tmoExpectedMove =
     else if date == 20230424 then 25.684
     else if date == 20230501 then 13.893
     else if date == 20230508 then 13.972
+    else if date == 20230515 then 12.937
 else 0;
 
 def tmusExpectedMove =
@@ -1460,6 +1550,7 @@ def tmusExpectedMove =
     else if date == 20230424 then 7.006
     else if date == 20230501 then 3.244
     else if date == 20230508 then 2.736
+    else if date == 20230515 then 2.615
 else 0;
 
 def tslaExpectedMove =
@@ -1472,6 +1563,7 @@ def tslaExpectedMove =
     else if date == 20230424 then 8.854
     else if date == 20230501 then 8.336
     else if date == 20230508 then 8.148
+    else if date == 20230515 then 9.619
 else 0;
 
 def txnExpectedMove =
@@ -1484,6 +1576,7 @@ def txnExpectedMove =
     else if date == 20230424 then 8.039
     else if date == 20230501 then 4.766
     else if date == 20230508 then 4.054
+    else if date == 20230515 then 3.968
 else 0;
 
 def unhExpectedMove =
@@ -1496,6 +1589,7 @@ def unhExpectedMove =
     else if date == 20230424 then 10.57
     else if date == 20230501 then 10.515
     else if date == 20230508 then 10.619
+    else if date == 20230515 then 10.057
 else 0;
 
 def unpExpectedMove =
@@ -1508,6 +1602,7 @@ def unpExpectedMove =
     else if date == 20230424 then 4.585
     else if date == 20230501 then 4.818
     else if date == 20230508 then 5.236
+    else if date == 20230515 then 5.147
 else 0;
 
 def upsExpectedMove =
@@ -1520,6 +1615,7 @@ def upsExpectedMove =
     else if date == 20230424 then 9.888
     else if date == 20230501 then 3.862
     else if date == 20230508 then 3.556
+    else if date == 20230515 then 3.726
 else 0;
 
 def usbExpectedMove =
@@ -1532,6 +1628,7 @@ def usbExpectedMove =
     else if date == 20230424 then 1.743
     else if date == 20230501 then 2.287
     else if date == 20230508 then 2.498
+    else if date == 20230515 then 2.015
 else 0;
 
 def vExpectedMove =
@@ -1544,6 +1641,7 @@ def vExpectedMove =
     else if date == 20230424 then 8.657
     else if date == 20230501 then 4.38
     else if date == 20230508 then 4.829
+    else if date == 20230515 then 4.393
 else 0;
 
 def vzExpectedMove =
@@ -1556,6 +1654,7 @@ def vzExpectedMove =
     else if date == 20230424 then 1.635
     else if date == 20230501 then 0.815
     else if date == 20230508 then 0.805
+    else if date == 20230515 then 0.767
 else 0;
 
 def wbaExpectedMove =
@@ -1568,6 +1667,7 @@ def wbaExpectedMove =
     else if date == 20230424 then 0.905
     else if date == 20230501 then 0.986
     else if date == 20230508 then 0.951
+    else if date == 20230515 then 1.027
 else 0;
 
 def wfcExpectedMove =
@@ -1580,6 +1680,7 @@ def wfcExpectedMove =
     else if date == 20230424 then 1.23
     else if date == 20230501 then 1.333
     else if date == 20230508 then 1.52
+    else if date == 20230515 then 1.46
 else 0;
 
 def wmtExpectedMove =
@@ -1592,6 +1693,7 @@ def wmtExpectedMove =
     else if date == 20230424 then 2.171
     else if date == 20230501 then 2.608
     else if date == 20230508 then 2.959
+    else if date == 20230515 then 6.504
 else 0;
 
 def xhbExpectedMove =
@@ -1604,6 +1706,7 @@ def xhbExpectedMove =
     else if date == 20230424 then 2.298
     else if date == 20230501 then 3.441
     else if date == 20230508 then 4.832
+    else if date == 20230515 then 2.031
 else 0;
 
 def xlbExpectedMove =
@@ -1616,6 +1719,7 @@ def xlbExpectedMove =
     else if date == 20230424 then 3.829
     else if date == 20230501 then 1.956
     else if date == 20230508 then 3.004
+    else if date == 20230515 then 2.445
 else 0;
 
 def xlcExpectedMove =
@@ -1628,6 +1732,7 @@ def xlcExpectedMove =
     else if date == 20230424 then 1.633
     else if date == 20230501 then 3.87
     else if date == 20230508 then 1.687
+    else if date == 20230515 then 2.094
 else 0;
 
 def xleExpectedMove =
@@ -1640,6 +1745,7 @@ def xleExpectedMove =
     else if date == 20230424 then 2.324
     else if date == 20230501 then 2.321
     else if date == 20230508 then 2.118
+    else if date == 20230515 then 2.343
 else 0;
 
 def xlfExpectedMove =
@@ -1652,6 +1758,7 @@ def xlfExpectedMove =
     else if date == 20230424 then 0.674
     else if date == 20230501 then 0.727
     else if date == 20230508 then 0.75
+    else if date == 20230515 then 0.703
 else 0;
 
 def xliExpectedMove =
@@ -1671,6 +1778,7 @@ def xlkExpectedMove =
     else if date == 20230424 then 3.245
     else if date == 20230501 then 3.545
     else if date == 20230508 then 2.959
+    else if date == 20230515 then 2.931
 else 0;
 
 def xlpExpectedMove =
@@ -1683,6 +1791,7 @@ def xlpExpectedMove =
     else if date == 20230424 then 0.892
     else if date == 20230501 then 1.113
     else if date == 20230508 then 0.444
+    else if date == 20230515 then 1.121
 else 0;
 
 def xlreExpectedMove =
@@ -1699,6 +1808,7 @@ def xluExpectedMove =
     else if date == 20230424 then 1.117
     else if date == 20230501 then 1.364
     else if date == 20230508 then 0.866
+    else if date == 20230515 then 1.05
 else 0;
 
 def xlvExpectedMove =
@@ -1711,6 +1821,7 @@ def xlvExpectedMove =
     else if date == 20230424 then 1.887
     else if date == 20230501 then 1.9
     else if date == 20230508 then 1.802
+    else if date == 20230515 then 1.829
 else 0;
 
 def xlyExpectedMove =
@@ -1723,6 +1834,7 @@ def xlyExpectedMove =
     else if date == 20230424 then 3.584
     else if date == 20230501 then 4.092
     else if date == 20230508 then 2.908
+    else if date == 20230515 then 2.96
 else 0;
 
 def xomExpectedMove =
@@ -1735,6 +1847,7 @@ def xomExpectedMove =
     else if date == 20230424 then 3.636
     else if date == 20230501 then 3.266
     else if date == 20230508 then 1.791
+    else if date == 20230515 then 3.196
 else 0;
 
 def xrtExpectedMove =
@@ -1747,6 +1860,7 @@ def xrtExpectedMove =
     else if date == 20230424 then 2.679
     else if date == 20230501 then 2.034
     else if date == 20230508 then 4.872
+    else if date == 20230515 then 1.715
 else 0;
 
 

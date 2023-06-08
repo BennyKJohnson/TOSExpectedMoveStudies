@@ -209,7 +209,7 @@ def qqqExpectedMove =
     else if date == 20230605 then 2.909
     else if date == 20230606 then 2.805
     else if date == 20230607 then 2.555
-    else if date == 20230608 then 3.165
+    else if date == 20230608 then 3.16
 else nil;
 
 def ndxExpectedMove =

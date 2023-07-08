@@ -1,6 +1,6 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 07-07-2023
+# Date: 07-08-2023
 #
 
 input showDailyEM = yes;
@@ -99,6 +99,7 @@ def spxExpectedMove =
     else if date == 20230705 then 19.803
     else if date == 20230706 then 21.688
     else if date == 20230707 then 29.971
+    else if date == 20230710 then 23.137
 else nil;
 
 def spyExpectedMove =
@@ -183,6 +184,7 @@ def spyExpectedMove =
     else if date == 20230705 then 2.054
     else if date == 20230706 then 2.256
     else if date == 20230707 then 3.01
+    else if date == 20230710 then 2.497
 else nil;
 
 def qqqExpectedMove =
@@ -267,6 +269,7 @@ def qqqExpectedMove =
     else if date == 20230705 then 2.519
     else if date == 20230706 then 2.575
     else if date == 20230707 then 3.422
+    else if date == 20230710 then 2.726
 else nil;
 
 def ndxExpectedMove =

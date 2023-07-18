@@ -106,6 +106,7 @@ def spxExpectedMove =
     else if date == 20230714 then 27.476
     else if date == 20230717 then 19.123
     else if date == 20230718 then 18.952
+    else if date == 20230719 then 21.427
 else nil;
 
 def spyExpectedMove =
@@ -197,6 +198,7 @@ def spyExpectedMove =
     else if date == 20230714 then 2.695
     else if date == 20230717 then 2.324
     else if date == 20230718 then 2.185
+    else if date == 20230719 then 2.37
 else nil;
 
 def qqqExpectedMove =
@@ -288,6 +290,7 @@ def qqqExpectedMove =
     else if date == 20230714 then 3.162
     else if date == 20230717 then 2.955
     else if date == 20230718 then 2.652
+    else if date == 20230719 then 3.206
 else nil;
 
 def ndxExpectedMove =

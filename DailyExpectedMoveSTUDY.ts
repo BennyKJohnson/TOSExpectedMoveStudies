@@ -132,6 +132,7 @@ def spxExpectedMove =
     else if date == 20230821 then 35.474
     else if date == 20230822 then 22.476
     else if date == 20230823 then 25.161
+    else if date == 20230824 then 24.267
 else nil;
 
 def spyExpectedMove =

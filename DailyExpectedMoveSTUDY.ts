@@ -1,6 +1,6 @@
 # Daily Expected Move
 # Author: Benny33
-# Date: 08-24-2023
+# Date: 08-25-2023
 #
 
 input showDailyEM = yes;
@@ -133,6 +133,7 @@ def spxExpectedMove =
     else if date == 20230822 then 22.476
     else if date == 20230823 then 25.161
     else if date == 20230824 then 24.267
+    else if date == 20230825 then 33.958
 else nil;
 
 def spyExpectedMove =
